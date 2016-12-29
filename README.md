@@ -1,8 +1,22 @@
 # inuit-flexgrid
 
-Flexbox grid for inuitcss.
+Flexbox grid for [inuitcss](https://github.com/inuitcss/inuitcss).
 
 Support for IE9 currently prevents inuitcss from using the flexbox layout mode. This plugin serves as an alternative to the core layout system.
+
+## Installation
+
+npm:
+
+```
+npm install inuit-flexgrid --save
+```
+
+Yarn:
+
+```
+yarn add inuit-flexgrid
+```
 
 ## Examples
 
