@@ -47,7 +47,7 @@ Cells will in most cases be accompanied by utility classes that divide the grid 
 Several modifier classes are provided. For example, `o-grid--flush` will divide the space equally between all containing cells without the need for width utility classes.
 
 ```html
-<div class="o-grid--auto">
+<div class="o-grid o-grid--auto">
   <div class="o-grid__cell">
     50%
   </div>
