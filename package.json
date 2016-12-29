@@ -1,13 +1,13 @@
 {
   "name": "inuit-flexgrid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Flexbox grid for inuitcss.",
   "main": "objects/_objects.grid.scss",
   "keywords": [
-      "flexbox",
-      "grid",
-      "inuit-flexgrid",
-      "inuitcss"
+    "flexbox",
+    "grid",
+    "inuit-flexgrid",
+    "inuitcss"
   ],
   "author": "nicoqh <nicoqh@gmail.com>",
   "license": "MIT"
