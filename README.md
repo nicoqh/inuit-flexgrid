@@ -44,7 +44,7 @@ Cells will in most cases be accompanied by utility classes that divide the grid 
 
 ## Modifier classes
 
-Several modifier classes are provided. For example, `o-grid--flush` will divide the space equally between all containing cells without the need for width utility classes.
+Several modifier classes are provided. For example, `o-grid--auto` will divide the space equally between all containing cells without the need for width utility classes.
 
 ```html
 <div class="o-grid o-grid--auto">
@@ -68,7 +68,7 @@ Several modifier classes are provided. For example, `o-grid--flush` will divide 
 * `o-grid--left`: Align cells left. Uses `justify-content: flex-start` (which is default).
 
 * `o-grid--middle`: Vertically center cells. Uses `align-items: center`.
-* `o-grid--bottom`: Align cells to the bottom. Uses align-items: flex-end`.
+* `o-grid--bottom`: Align cells to the bottom. Uses `align-items: flex-end`.
 
 * `o-grid--around`: Distribute free space around the cells. Uses `justify-content: space-around`.
 * `o-grid--between`: Distribute free space between the cells. Uses `justify-content: space-between`.
