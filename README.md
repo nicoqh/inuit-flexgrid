@@ -18,6 +18,12 @@ Yarn:
 yarn add inuit-flexgrid
 ```
 
+Import the plugin in the *objects* section of main.scss:
+
+```scss
+@import "node_modules/inuit-flexgrid/objects/objects.grid";
+```
+
 ## Examples
 
 Cells are full-width and will stack on top of each other by default:
