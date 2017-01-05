@@ -80,3 +80,15 @@ Several modifier classes are provided. For example, `o-grid--auto` will divide t
 * `o-grid--between`: Distribute free space between the cells. Uses `justify-content: space-between`.
 
 * `o-grid--reverse`: Place cells from right to left. Uses `flex-direction: row-reverse`.
+
+
+## Configuration
+
+### Gutter size
+
+The default gutter size is equal to `$inuit-global-spacing-unit`. You can change the default by setting the `$inuit-flexgrid-gutter-width` variable before importing the grid object:
+
+```scss
+$inuit-global-spacing-unit: 26px;
+@import "node_modules/inuit-flexgrid/objects/objects.grid";
+```

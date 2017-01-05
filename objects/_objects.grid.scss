@@ -37,6 +37,11 @@
  * </div>
  */
 
+// Specify the width of the gutters. By default we use the
+// global spacing unit provided by inuitcss.
+
+$inuit-flexgrid-gutter-width: $inuit-global-spacing-unit !default;
+
 
 /* The grid
    ========================================================================== */
@@ -51,7 +56,7 @@
     flex-flow: row wrap;
     list-style: none;
     padding: 0;
-    margin-left: -$inuit-global-spacing-unit; /* [1] */
+    margin-left: -$inuit-flexgrid-gutter-width; /* [1] */
 }
 
 /**
@@ -60,7 +65,7 @@
 
 .o-grid__cell {
     flex: 0 1 auto;
-    padding-left: $inuit-global-spacing-unit; /* [1] */
+    padding-left: $inuit-flexgrid-gutter-width; /* [1] */
     width: 100%;
 }
 
