@@ -89,6 +89,6 @@ Several modifier classes are provided. For example, `o-grid--auto` will divide t
 The default gutter size is equal to `$inuit-global-spacing-unit`. You can change the default by setting the `$inuit-flexgrid-gutter-width` variable before importing the grid object:
 
 ```scss
-$inuit-global-spacing-unit: 26px;
+$inuit-flexgrid-gutter-width: 26px;
 @import "node_modules/inuit-flexgrid/objects/objects.grid";
 ```
