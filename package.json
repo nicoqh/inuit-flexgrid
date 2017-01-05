@@ -3,9 +3,17 @@
   "version": "0.1.1",
   "description": "Flexbox grid for inuitcss.",
   "main": "objects/_objects.grid.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoqh/inuit-flexgrid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoqh/inuit-flexgrid/issues"
+  },
   "keywords": [
     "flexbox",
     "grid",
+    "inuit",
     "inuit-flexgrid",
     "inuitcss"
   ],
