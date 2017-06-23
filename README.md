@@ -65,8 +65,6 @@ Several modifier classes are provided. For example, `o-grid--auto` will divide t
 
 `o-grid` can be used with the following modifiers:
 
-* `o-grid--flush`: Remove gutters.
-
 * `o-grid--auto`: Automatically size cells by distributing them equally.
 
 * `o-grid--center`: Horizontally center cells. Uses `justify-content: center`.
@@ -81,14 +79,40 @@ Several modifier classes are provided. For example, `o-grid--auto` will divide t
 
 * `o-grid--reverse`: Place cells from right to left. Uses `flex-direction: row-reverse`.
 
+* A set of gutter width modifiers (see below)
+
 
 ## Configuration
 
-### Gutter size
+### Gutter sizes
 
-The default gutter size is equal to `$inuit-global-spacing-unit`. You can change the default by setting the `$inuit-flexgrid-gutter-width` variable before importing the grid object:
+A set of gutter widths are provided as modifier classes. For example, the following block will generate a grid with "large" gutters and a grid with no gutters at all:
+
+```html
+<div class="o-grid o-grid--large">
+    <div class="o-grid__cell">
+    </div>
+</div>
+
+<div class="o-grid o-grid--flush">
+    <div class="o-grid__cell">
+    </div>
+</div>
+```
+
+Without a modifier, the default gutter size is equal to `$inuit-global-spacing-unit`. You have full control over which modifier classes are generated and how they are suffixed. Simply override the `$inuit-flexgrid-spacing-sizes` variable before you import the grid object:
 
 ```scss
-$inuit-flexgrid-gutter-width: 26px;
+$inuit-flexgrid-spacing-sizes: (
+    null: $your-spacing-unit
+    '--xs': $your-spacing-unit-xs,
+    '--sm': $your-spacing-unit-sm,
+    '--lg': $your-spacing-unit-lg,
+    '--xl': $your-spacing-unit-xl,
+    '--none': 0
+) !default;
+
 @import "node_modules/inuit-flexgrid/objects/objects.grid";
 ```
+
+Remember to include the `null` key if you want the default `o-grid` (without modifiers) to have gutters.
