@@ -61,12 +61,13 @@ $inuit-flexgrid-gutter-width: $inuit-global-spacing-unit !default;
 
 /**
  * 1. Default gutters. Also neutralizes the left margin on `o-grid`.
+ * 2. Cells are full-width and stack on top of each other by default.
  */
 
 .o-grid__cell {
     flex: 0 1 auto;
     padding-left: $inuit-flexgrid-gutter-width; /* [1] */
-    width: 100%;
+    width: 100%; /* [2] */
 }
 
 
