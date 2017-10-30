@@ -43,7 +43,7 @@ $inuit-flexgrid-gutter-width: $inuit-global-spacing-unit !default;
 
 // Specify a map of possible gutter widths. By default we use the global
 // spacing units provided by inuitcss and their conventional class
-// name suffixes (tiny, small, large etc).
+// name suffixes (--tiny, --small, --large etc).
 
 $inuit-flexgrid-spacing-sizes: (
     null: $inuit-flexgrid-gutter-width,
@@ -79,10 +79,10 @@ $inuit-flexgrid-spacing-sizes: (
    ========================================================================== */
 
 /**
- * 1. The variable $inuit-flexgrid-spacing-sizes contains a `null` key which
+ * 1. The map $inuit-flexgrid-spacing-sizes contains a `null` key which
  *    will be our default gutter size.
- * 2. Add a negative margin only on one side. That way we aren't required to
- *    use a wrapper with the same amount of spacing, though it's common to do so.
+ * 2. Add a negative margin on one side only. That way we aren't required to use
+ *    a wrapper with the same amount of spacing, though it's common to do so.
  * 3. Neutralize the left margin on `o-grid`.
  */
 
