@@ -51,7 +51,7 @@ $inuit-flexgrid-spacing-sizes: (
     '--small': $inuit-global-spacing-unit-small,
     '--large': $inuit-global-spacing-unit-large,
     '--huge': $inuit-global-spacing-unit-huge,
-    '--flush': 0
+    '--flush': 0,
 ) !default;
 
 // Specify possible alignment values
@@ -61,7 +61,7 @@ $inuit-flexgrid-alignment-values: (
     '--middle': 'center',
     '--bottom': 'flex-end',
     '--baseline': 'baseline',
-    '--stretch': 'stretch'
+    '--stretch': 'stretch',
 ) !default;
 
 // Specify possible justify values
@@ -71,7 +71,7 @@ $inuit-flexgrid-justify-values: (
     '--center': 'center',
     '--right': 'flex-end',
     '--between': 'space-between',
-    '--around': 'space-around'
+    '--around': 'space-around',
 ) !default;
 
 /* The grid
@@ -130,7 +130,7 @@ $inuit-flexgrid-justify-values: (
 
 @each $namespace, $value in $inuit-flexgrid-justify-values {
     .o-grid#{$namespace} {
-        justify-content: $value
+        justify-content: #{$value};
     }
 }
 
@@ -152,13 +152,13 @@ $inuit-flexgrid-justify-values: (
 
 @each $namespace, $value in $inuit-flexgrid-alignment-values {
     .o-grid#{$namespace} {
-        align-items: $value
+        align-items: #{$value};
     }
 }
 
 @each $namespace, $value in $inuit-flexgrid-alignment-values {
     .o-grid__cell#{$namespace} {
-        align-self: $value
+        align-self: #{$value};
     }
 }
 
