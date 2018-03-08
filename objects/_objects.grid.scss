@@ -51,9 +51,28 @@ $inuit-flexgrid-spacing-sizes: (
     '--small': $inuit-global-spacing-unit-small,
     '--large': $inuit-global-spacing-unit-large,
     '--huge': $inuit-global-spacing-unit-huge,
-    '--flush': 0,
+    '--flush': 0
 ) !default;
 
+// Specify possible alignment values
+
+$inuit-flexgrid-alignment-values: (
+    '--top': 'flex-start',
+    '--middle': 'center',
+    '--bottom': 'flex-end',
+    '--baseline': 'baseline',
+    '--stretch': 'stretch'
+) !default;
+
+// Specify possible justify values
+
+$inuit-flexgrid-justify-values: (
+    '--left': 'flex-start',
+    '--center': 'center',
+    '--right': 'flex-end',
+    '--between': 'space-between',
+    '--around': 'space-around'
+) !default;
 
 /* The grid
    ========================================================================== */
@@ -109,42 +128,52 @@ $inuit-flexgrid-spacing-sizes: (
 /* Horizontal alignment
    ========================================================================== */
 
-.o-grid--center {
-    justify-content: center;
+@each $namespace, $value in $inuit-flexgrid-justify-values {
+    .o-grid#{$namespace} {
+        justify-content: $value
+    }
 }
 
-.o-grid--right {
-    justify-content: flex-end;
+
+/* Pull behavior
+   ========================================================================== */
+
+.o-grid__cell--pull-left {
+    margin-right: auto;
 }
 
-.o-grid--left {
-    justify-content: flex-start;
+.o-grid__cell--pull-right {
+    margin-left: auto;
 }
 
 
 /* Vertical alignment
    ========================================================================== */
 
-.o-grid--middle {
-    align-items: center;
+@each $namespace, $value in $inuit-flexgrid-alignment-values {
+    .o-grid#{$namespace} {
+        align-items: $value
+    }
 }
 
-.o-grid--bottom {
-    align-items: flex-end;
+@each $namespace, $value in $inuit-flexgrid-alignment-values {
+    .o-grid__cell#{$namespace} {
+        align-self: $value
+    }
 }
 
 
 /* Content distribution
    ========================================================================== */
 
-.o-grid--around {
-    justify-content: space-around;
-}
-
-.o-grid--between {
-    justify-content: space-between;
-}
-
 .o-grid--reverse {
     flex-direction: row-reverse;
+}
+
+.o-grid--column {
+    flex-direction: column;
+}
+
+.o-grid--column-reverse {
+    flex-direction: column-reverse;
 }
