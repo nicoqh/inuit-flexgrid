@@ -1,6 +1,6 @@
 {
   "name": "inuit-flexgrid",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Flexbox grid for inuitcss.",
   "main": "objects/_objects.grid.scss",
   "repository": {
