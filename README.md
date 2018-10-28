@@ -139,7 +139,7 @@ classes:
 * `o-grid--column`: Sets `flex-direction: column`. Cells will be layed out from
   top to bottom instead of from left to right.
 * `o-grid--column-reverse`: Sets `flex-direction: column-reverse`. Cells will be
-  layoued out from bottom to top.
+  layed out from bottom to top.
 
 ### Reverse the order of cells
 
